@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #e0e0e0;
+      background-color: #121212;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      font-weight: 400;
+      color: #ff0000;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: #d0d0d0;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #64b5f6;
+    }
+
+    /* Timeline (Experience) */
+    .timeline-item {
+      background: #1e1e1e;
+      padding: 20px;
+      border-left: 3px solid #64b5f6;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    .timeline-item span {
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    /* Certifications */
+    .cert-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cert-list li {
+      background: #1e1e1e;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 6px;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .skills-grid div {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .skills-grid h3 {
+      margin-bottom: 10px;
+      color: #90caf9;
+    }
+
+    /* Education */
+    #education {
+      text-align: center;
+    }
+
+    /* Badge */
+    .badge-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .badge-container iframe {
+      width: 330px;
+      height: 88px;
+      border: none;
+    }
+
+    /* Contact */
+    .contact-info {
+      display: flex;
+      justify-content: center; /* Horizontal centering */
+      align-items: center;     /* Vertical centering (optional) */
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .contact-info img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f2027;
+      color: #bbb;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Lakshay Tondwal</h1>
+      <h2>Penetration Tester</h2>
+      <p>
+        Seeking opportunities to improve and utilize my technical skills in Cyber Security 
+        and Penetration Testing while contributing to organizational goals.
+      </p>
+    </div>
+  </header>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Ethical Hacking & Cybersecurity Intern</h3>
+        <span>Learn and Build | July 2024 – August 2024 (45 Days)</span>
+        <ul>
+          <li>Conducted penetration testing and vulnerability assessments within practice environments.</li>
+          <li>Acquired knowledge in web and web application security to safeguard sensitive data.</li>
+          <li>Developed expertise in Ethical Hacking, Linux, and Network Security.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainings / Certifications -->
+  <section id="certifications">
+    <h2>Trainings & Certifications</h2>
+    <ul class="cert-list">
+      <li>Jr Penetration Tester Path – <a href="https://tryhackme.com/certificate/THM-ESAC5CMPPT">TryHackMe</a></li>
+      <li>Ethical Hacker – <a href="https://www.credly.com/badges/ea099b68-0f06-400e-95bb-5263ba68157e">Cisco Network Academy</a></li>
+      <li>Offensive Penetration Testing – <a href="https://www.linkedin.com/learning/certificates/d1d2f8be9afe261cb3788402a693bb8e98ea4ad3b1e7358f776fedfd280fe67e">LinkedIn</a></li>
+      <li>Advent of Cyber 2024 – <a href="https://tryhackme.com/certificate/THM-B9W9ZX4XFO">TryHackMe</a></li>
+      <li>Career Essentials in Cybersecurity – <a href="https://www.linkedin.com/learning/certificates/9fd5af3eecf8e807fcb9c9d1104b6def008e38e217c45efba270330665e7452f">Microsoft & LinkedIn</a></li>
+      <li>Linux Training – <a href="docs/Linux.pdf">Spoken Tutorial</a></li>
+      <li>Advanced C++ Training – <a href="docs/CPP.pdf">Spoken Tutorial</a></li>
+    </ul>
+  </section>
+
+  <!-- Technical Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Core Offensive Security</h3>
+        <ul>
+          <li>Penetration Testing (Web & Network)</li>
+          <li>Vulnerability Assessment</li>
+          <li>Exploitation</li>
+          <li>Post-Exploitation</li>
+          <li>Privilege Escalation</li>
+          <li>Lateral Movement</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3>Security Tools</h3>
+        <p>
+          Metasploit, Burp Suite, OWASP ZAP, Nessus, Nmap, Wireshark, Hydra, Hashcat, John the Ripper,
+          SQLmap, Netcat, Gobuster, WPScan, Nikto, Aircrack-ng, Empire, Cobalt Strike, BloodHound,
+          Impacket, Mimikatz, PowerSploit, Recon-ng
+        </p>
+      </div>
+
+      <div>
+        <h3>Programming & Scripting</h3>
+        <ul>
+          <li>Python</li>
+          <li>Bash</li>
+          <li>PowerShell</li>
+          <li>C/C++</li>
+          <li>JavaScript (for DOM/XSS testing)</li>
+          <li>Regex</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Frameworks & Methodologies</h3>
+        <ul>
+          <li>OWASP Top 10</li>
+          <li>MITRE ATT&CK</li>
+          <li>NIST Cybersecurity Framework</li>
+          <li>CVE/CVSS Analysis</li>
+          <li>Network & System Hardening</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>
+      Bachelor of Technology in Computer Science & Engineering<br>
+      Rajasthan Technical University, India (2022 – 2026)
+    </p>
+  </section>
+
+  <!-- TryHackMe Badge -->
+  <section id="badge">
+    <h2>TryHackMe Progress</h2>
+    <div class="badge-container">
+      <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3572006"></iframe>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>
+        <a href="https://www.linkedin.com/in/lakshaytondwal">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lakshay Tondwal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
