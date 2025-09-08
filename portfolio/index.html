@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #e0e0e0;
+      background-color: #121212;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #64b5f6;
+      border-bottom: 2px solid #203a43;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .role-badge {
+      display: inline-block;
+      background: #ff0000;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #d0d0d0;
+    }
+
+    /* Card Style */
+    .card {
+      background: #1e1e1e;
+      border: 1px solid #203a43;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 4px 12px rgba(100, 181, 246, 0.3);
+    }
+
+    /* Profiles */
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .profile-card {
+      background: #1e1e1e;
+      border: 2px solid #203a43;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .profile-card:hover {
+      transform: translateY(-5px);
+      border-color: #64b5f6;
+      box-shadow: 0px 4px 12px rgba(100, 181, 246, 0.3);
+    }
+    .profile-card img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 10px;
+    }
+    .profile-card span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #90caf9;
+    }
+
+    /* Timeline */
+    .timeline .card {
+      border-left: 3px solid #64b5f6;
+    }
+
+    .timeline h3 {
+      color: #fff;
+    }
+
+    .timeline span {
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    /* Certifications */
+    .cert-list li {
+      margin: 10px 0px;
+      padding: 12px 15px;
+      border-radius: 8px;
+      background: #1e1e1e;
+      transition: background 0.2s;
+    }
+    .cert-list li:hover {
+      background: #2a2a2a;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+    }
+
+    .skills-grid div {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .skills-grid div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 4px 12px rgba(100, 181, 246, 0.3);
+    }
+
+    .skills-grid h3 {
+      color: #90caf9;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f2027;
+      color: #bbb;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Lakshay Tondwal</h1>
+    <div class="role-badge">Penetration Tester</div>
+    <p>
+      To start my cybersecurity career with a focus on Vulnerability Assessment and Penetration Testing (VAPT),
+      applying hands-on skills in web and network security to support client security goals 
+      while continuously developing toward red teaming expertise.
+    </p>
+  </header>
+
+  <!-- Profiles -->
+  <section id="profiles">
+    <h2>Profiles</h2>
+    <div class="profile-grid">
+      <a href="https://www.linkedin.com/in/lakshaytondwal" target="_blank" class="profile-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/lakshaytondwal" target="_blank" class="profile-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub">
+        <span>GitHub</span>
+      </a>
+      <a href="https://tryhackme.com/p/lakshaytondwal" target="_blank" class="profile-card">
+        <img src="https://assets.tryhackme.com/img/favicon.png" alt="TryHackMe">
+        <span>TryHackMe</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="card">
+        <h3>Ethical Hacking & Cybersecurity Intern</h3>
+        <span>Learn and Build | July 2024 – August 2024 (45 Days)</span>
+        <ul>
+          <li>Performed web application penetration testing in lab environments, identifying SQL injection and XSS vulnerabilities.</li>
+          <li>Conducted network scans with Nmap and Nessus, reporting misconfigurations and weak credentials.</li>
+          <li>Practiced exploitation and privilege escalation in Linux and Windows environments.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Trainings & Certifications</h2>
+    <ul class="cert-list">
+      <li>Jr Penetration Tester Path – <a href="https://tryhackme.com/certificate/THM-ESAC5CMPPT">TryHackMe</a></li>
+      <li>Ethical Hacker – <a href="https://www.credly.com/badges/ea099b68-0f06-400e-95bb-5263ba68157e">Cisco Network Academy</a></li>
+      <li>Offensive Penetration Testing – <a href="https://www.linkedin.com/learning/certificates/d1d2f8be9afe261cb3788402a693bb8e98ea4ad3b1e7358f776fedfd280fe67e">LinkedIn</a></li>
+      <li>Advent of Cyber 2024 – <a href="https://tryhackme.com/certificate/THM-B9W9ZX4XFO">TryHackMe</a></li>
+      <li>Career Essentials in Cybersecurity – <a href="https://www.linkedin.com/learning/certificates/9fd5af3eecf8e807fcb9c9d1104b6def008e38e217c45efba270330665e7452f">Microsoft & LinkedIn</a></li>
+      <li>Linux Training – <a href="/portfolio/certs/linux/">Spoken Tutorial (IIT Bombay)</a></li>
+      <li>Advanced C++ Training – <a href="/portfolio/certs/cpp/">Spoken Tutorial (IIT Bombay)</a></li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Core Offensive Security</h3>
+        <ul>
+          <li>Penetration Testing (Web & Network)</li>
+          <li>Vulnerability Assessment</li>
+          <li>Exploitation</li>
+          <li>Post-Exploitation</li>
+          <li>Privilege Escalation</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Security Tools</h3>
+        <p>Metasploit, Burp Suite, OWASP ZAP, Nessus, Nmap, Wireshark, Hydra, Hashcat, John the Ripper,
+          SQLmap, Netcat, Gobuster, WPScan, Nikto, Aircrack-ng</p>
+      </div>
+      <div>
+        <h3>Programming & Scripting</h3>
+        <ul>
+          <li>Python</li>
+          <li>Bash</li>
+          <li>PowerShell</li>
+          <li>C/C++</li>
+          <li>JavaScript (for DOM/XSS testing)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Frameworks & Methodologies</h3>
+        <ul>
+          <li>OWASP Top 10</li>
+          <li>MITRE ATT&CK</li>
+          <li>NIST Cybersecurity Framework</li>
+          <li>CVE/CVSS Analysis</li>
+          <li>Network & System Hardening</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card" style="text-align:center;">
+      <strong>Bachelor of Technology</strong> in <strong>Computer Science & Engineering</strong><br>
+      Rajasthan Technical University, India (2022 – 2026)
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lakshay Tondwal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
